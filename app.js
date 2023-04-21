@@ -1,6 +1,7 @@
-const menuIcon = document.getElementById('menu-icon');
-const menuItems = document.getElementById('menu-items');
+const menuIcon = document.querySelector(".menu-icon");
+const menu = document.querySelector(".menu");
 
-menuIcon.addEventListener('click', () => {
-  menuItems.classList.toggle('show');
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("active");
+  menu.classList.toggle("active");
 });
