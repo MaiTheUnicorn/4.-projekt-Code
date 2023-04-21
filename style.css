@@ -1,109 +1,34 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #1b3a20;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  nav {
-    background-color: #333;
-    position: relative;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .menu-icon {
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-    padding: 5px;
-  }
-  
-  .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease;
-    background-color: #333;
-  }
-  
-  .menu li {
-    margin: 10px 0;
-  }
-  
-  .menu a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .menu-icon:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  .menu-icon.active {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  .menu.active {
-    height: 200px;
-  }
-  
-  section {
-    padding: 40px;
-  }
-  
-  h2 {
-    margin: 0 0 20px;
-  }
-  
-  footer {
-    background-color: #1b3a20;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  #menu-icon {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .icon-bar {
-    display: block;
-    width: 22px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-  }
-  
-  @media (max-width: 768px) {
-    #menu-items {
-      display: none;
-    }
-  
-    #menu-icon {
-      display: block;
-    }
-  
-    #menu-icon:hover {
-      background-color: #1b3a20;
-    }
-  
-    #menu-icon .icon-bar {
-      background-color: #fff;
-    }
-  }
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
