@@ -1,11 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  color: #FFF926;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+}
+
 .hamburger {
   position: fixed;
   z-index: 100;
   top: 1rem;
-  right: 1rem;
+  left: 1rem;
   padding: 4px;
   border: black solid 1px;
-  background: white;
+  background: #FFF926;
   cursor: pointer;
 }
 
@@ -23,7 +42,7 @@
   bottom: 0;
   z-index: 99;
   background: black;
-  color: white;
+  color: #FFF926;
   list-style: none;
   padding-top: 4rem;
 }
@@ -31,4 +50,11 @@
 .showMenu {
   transform: translateY(0);
 }
+
+h1 {
+  position: relative;
+  color: #FFF926;
+}
+
+@media only screen and (max-width: 620px)
 
